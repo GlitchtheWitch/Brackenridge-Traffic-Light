@@ -20,7 +20,6 @@ const bool COMMON_ANODE = false;
 
 const int COUNTDOWN_START = 9; // seconds the pedestrian gets to cross
 
-// Which segments are lit for each digit 0-9 (a b c d e f g)
 const byte DIGITS[10][7] = {
   {1,1,1,1,1,1,0}, // 0
   {0,1,1,0,0,0,0}, // 1
@@ -56,7 +55,7 @@ void normalState() {
 }
 
 void setup() {
-  pinMode(BUTTON_PIN, INPUT_PULLUP);  // reads LOW when pressed
+  pinMode(BUTTON_PIN, INPUT_PULLUP);
   pinMode(CAR_RED, OUTPUT);
   pinMode(PED_RED, OUTPUT);
   pinMode(PED_GREEN, OUTPUT);
